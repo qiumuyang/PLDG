@@ -1,0 +1,15 @@
+# arguments for training
+epochs: 120
+iters: 1000
+batch_size: 2
+optimizer: sgd
+lr: 1.0e-3
+weight_decay: 0
+optim_kwargs:
+  nesterov: True
+  momentum: 0.99
+lr_scheduler: poly
+lr_kwargs: {}
+
+n_prototypes: 5
+ema_decay: 0.999

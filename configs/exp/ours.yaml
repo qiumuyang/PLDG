@@ -1,0 +1,9 @@
+# prototype
+proto_index: -2
+proto_propagate_epoch: 2
+proto_expand_epoch: 20
+proto_rect_epoch: 20
+proto_temperature: 0.1
+proto_thresh: 25%
+
+lambda_contrast: 0.5

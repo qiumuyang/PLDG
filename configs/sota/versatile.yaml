@@ -1,0 +1,10 @@
+# arguments for training
+epochs: 100
+iters: 1000
+batch_size: 4
+optimizer: adamw
+lr: 1.0e-3
+weight_decay: 1.0e-5
+lr_scheduler: poly
+
+weight_entropy_minimization: 3

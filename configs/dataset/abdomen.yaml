@@ -1,0 +1,19 @@
+dataset: abdomen_ct
+root: /data/qmy/Dataset/Abdomen
+n_domains: 6
+n_channels: 1
+n_classes: 10
+patch_size: [96, 96, 96]
+class_names:
+  [
+    "background",
+    "spleen",
+    "kidney.R",
+    "kidney.L",
+    "gallbladder",
+    "esophagus",
+    "liver",
+    "stomach",
+    "pancreas",
+    "duodenum",
+  ]

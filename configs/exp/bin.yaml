@@ -1,0 +1,5 @@
+# multiple binary classifiers
+fg_thresh: 0.8
+non_fg_thresh: 0.8
+
+lambda_bin: 2.0

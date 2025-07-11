@@ -1,0 +1,17 @@
+# model
+n_filters: 32
+
+# accelerator
+gradient_accumulation_steps: 1 # 1 for no gradient accumulation
+mixed_precision: "no" # "no" or "fp16"
+balanced: True
+
+# dataloader
+num_workers: 12
+
+# logging / evaluation
+logs_each_epoch: 4
+warmup_epochs: 0 # skip evaluation for the first N epochs
+
+stride_xy: 16
+stride_z: 16

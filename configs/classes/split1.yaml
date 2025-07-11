@@ -1,0 +1,8 @@
+domain_classes:
+  [
+    ["background", "kidney.R"],
+    ["background", "kidney.L"],
+    ["background", "stomach", "esophagus", "duodenum"],
+    ["background", "liver", "gallbladder"],
+    ["background", "pancreas", "spleen"],
+  ]

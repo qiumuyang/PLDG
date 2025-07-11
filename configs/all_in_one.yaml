@@ -1,0 +1,78 @@
+dataset: abdomen_ct
+root: /data/qmy/Dataset/Abdomen
+n_domains: 6
+n_channels: 1
+n_classes: 10
+patch_size: [96, 96, 96]
+class_names:
+  [
+    "background",
+    "spleen",
+    "kidney.R",
+    "kidney.L",
+    "gallbladder",
+    "esophagus",
+    "liver",
+    "stomach",
+    "pancreas",
+    "duodenum",
+  ]
+
+# model
+n_filters: 32
+
+# accelerator
+gradient_accumulation_steps: 1 # 1 for no gradient accumulation
+mixed_precision: "no" # "no" or "fp16"
+balanced: True
+
+# dataloader
+num_workers: 12
+
+# logging / evaluation
+logs_each_epoch: 4
+warmup_epochs: 0 # skip evaluation for the first N epochs
+
+stride_xy: 16
+stride_z: 16
+
+
+# prototype
+proto_index: -2
+proto_propagate_epoch: 2
+proto_expand_epoch: 20
+proto_rect_epoch: 20
+proto_temperature: 0.1
+proto_thresh: 25%
+
+lambda_contrast: 0.5
+
+domain_classes:
+  [
+    ["background", "kidney.R"],
+    ["background", "kidney.L"],
+    ["background", "stomach", "esophagus", "duodenum"],
+    ["background", "liver", "gallbladder"],
+    ["background", "pancreas", "spleen"],
+  ]
+
+# arguments for training
+epochs: 80
+epoch_rampup: 20
+iters: 1000
+batch_size: 4
+optimizer: sgd
+lr: 0.3
+weight_decay: 0.0001
+lr_scheduler: plateau
+lr_kwargs:
+  mode: "min"
+  factor: 0.8 # reduce by 20%
+  patience: 5
+  threshold: 1.0e-3
+  verbose: True
+  min_lr: 0.03
+
+conf_thresh: 0.9
+
+lambda_dice: 4.0

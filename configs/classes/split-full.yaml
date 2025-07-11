@@ -1,0 +1,8 @@
+domain_classes:
+  [
+    ["background","spleen","kidney.R","kidney.L","gallbladder","esophagus","liver","stomach","pancreas","duodenum"],
+    ["background","spleen","kidney.R","kidney.L","gallbladder","esophagus","liver","stomach","pancreas","duodenum"],
+    ["background","spleen","kidney.R","kidney.L","gallbladder","esophagus","liver","stomach","pancreas","duodenum"],
+    ["background","spleen","kidney.R","kidney.L","gallbladder","esophagus","liver","stomach","pancreas","duodenum"],
+    ["background","spleen","kidney.R","kidney.L","gallbladder","esophagus","liver","stomach","pancreas","duodenum"],
+  ]
