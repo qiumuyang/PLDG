@@ -1,5 +1,5 @@
 dataset: abdomen_ct
-root: /data/qmy/Dataset/Abdomen
+root: /your/path/to/Abdomen
 n_domains: 6
 n_channels: 1
 n_classes: 10

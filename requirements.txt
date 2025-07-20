@@ -1,0 +1,11 @@
+accelerate
+batchgenerators
+h5py
+numpy
+pillow
+pyyaml
+# --extra-index-url https://download.pytorch.org/whl/cu121 # cu118
+torch==2.5.0
+torchvision==0.20.0
+tqdm
+wandb

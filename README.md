@@ -1,7 +1,7 @@
 # Partially Labeled Domain Generalization
 
 ```bash
-bash start_par.sh <entrypoint> <domain_ids> <devices> <output_dir> <config> [config ...]
+bash start_par.sh <entrypoint> <domain_ids> <devices> <output_dir> <config> [config...]
 
 # This will run domain experiments on:
 #   0,4 -> GPU0
@@ -27,7 +27,7 @@ bash start_par.sh ablation/<entrypoint> / sotas/<entrypoint>
 
 
 ```bash
-bash eval.sh <domains> <devices> <dir> latest/best <target> <config> [<config> ...]
+bash eval.sh <domains> <devices> <dir> latest/best <target> <config> [config...]
 
 # target can be one / all / comma-separated-ids
 bash eval.sh 0,1 0,1 runs/ours latest one configs/all_in_one.yaml
